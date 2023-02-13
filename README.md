@@ -182,6 +182,7 @@ Work (***<ins>depID</ins>***, ***<ins>docID</ins>***)
 
 [R27] When a doctor is working for a department, the information on the doctor cannot be deleted or changed in the database.
 
+<img width="662" alt="Screenshot 2023-02-13 at 11 29 22 AM" src="https://user-images.githubusercontent.com/102799924/218515303-3e3dc477-7348-436b-9450-918d187d84b5.png">
 
 
 ### SAMPLE DATA
