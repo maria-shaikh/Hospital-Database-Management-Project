@@ -11,12 +11,12 @@ The project's goal is to computerize the hospital's front office management in o
 Stakeholders for the Hospital system 
 
 At MoMo hospital, we strive to provide the highest level of care not just for our patients, but for all stakeholders within the organization. We have a number of stakeholders that impact the processes and outcomes of the hospital and for the scope of this project, we are recognizing the
-Internal stakeholders:
+##### Internal stakeholders:
 Doctors
 Nurses
 Non-medical staff members
 
-External stakeholders:
+##### External stakeholders:
 Inpatients and outpatients
 Shareholders of the hospital 
 Suppliers
@@ -24,7 +24,7 @@ Competitors
 
 Both internal and external stakeholders have their own unique way in which they impact the functioning of the hospital and we would like to build a systematic database system to store their data in order to provide maximum efficiency in carrying out day-to-day operations. 
 
-Motivation and Objectives 
+### Motivation and Objectives 
 The main objective of building a hospital management system is to provide an efficient and faster way for each stakeholder [either admin or the user] to access, edit and update the database. By creating a database, we are able to eliminate the following problems which existed previously:
 1. Loss of Data
 As the influx of data produced in any hospital is very high and records of patients that need to be stored for a very long time. There is a high chance of losing data. By our Hospital management system, we are making sure that all the data stays stored in our database system and can be retrieved easily. 
@@ -92,7 +92,8 @@ Prescribe: ternary relationship
 
 ![Project_0506_01 (7)](https://user-images.githubusercontent.com/102799924/218373791-dbec5fa9-672d-4ae6-8d6b-cb1448606cc0.png)
 
-Relational schema
+### Relational schema
+
 Patient(patID,patEmail,patPassword,patFirstName,patLastName,patAddress, patSex,patDOB)
  
 Doctor(docID,docEmail,docPassword, docFirstName, docLastName, depID)
@@ -125,7 +126,7 @@ Assist (nurID, docID)
 Work (depID, docID)
 
 
-Business rules and determine referential integrity actions.
+### Business rules and determine referential integrity actions.
 
 [R1] When a department is deleted from the database, the corresponding doctor’s information should also be deleted from the database.
 
@@ -183,7 +184,7 @@ Business rules and determine referential integrity actions.
 
 
 
-SAMPLE DATA
+### SAMPLE DATA
 
 
 Department ('DEPT0001','Emergency','2409277750','emergency_momo@hospital.com')
