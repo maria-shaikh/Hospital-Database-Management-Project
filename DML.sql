@@ -25,3 +25,10 @@ WHERE d.docID = m.docID
 GROUP BY d.docID, CONCAT (d.docFirstName,' ' ,d.docLastName)
 ORDER BY COUNT(DISTINCT medID) DESC
 
+-- retrieve the first and last names of all patients who suffered from Covid-19
+SELECT p.patFirstName, p.patLastName
+FROM [Hospital_System.Patient] p
+JOIN [Hospital_System.MedicalHistory] m
+ON p.patID = m.patID
+WHERE hstDisease = 'Covid-19'
+
