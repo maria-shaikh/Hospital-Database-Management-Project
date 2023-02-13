@@ -37,8 +37,9 @@ Data transferring is very essential for a hospital management system as sometime
 
 ### ER Schema
  
-Entities, Attributes and Primary Keys
- Patient(<ins>patID</ins>,patEmail,patPassword,patName,-patFirstName,-patLastName,patAddress, patSex,patDOB)
+#### Entities, Attributes and Primary Keys
+
+Patient(<ins>patID</ins>,patEmail,patPassword,patName,-patFirstName,-patLastName,patAddress, patSex,patDOB)
  
 Doctor(<ins>docID</ins>,docEmail,docPassword,docName,-docFirstName,-docLastName)
  
@@ -54,8 +55,7 @@ Medicine(<ins>medID</ins>,medName,medCost)
 
 Bill(<ins>bilID</ins>,bilDoctorCharge,bilRoomCharge,bilNumberofdays)
  
-
-Relationships, Attributes, Degrees, Participating Entities and Constraints
+#### Relationships, Attributes, Degrees, Participating Entities and Constraints
 
 Work: binary relationship
 1 doctor to 0 or many department
