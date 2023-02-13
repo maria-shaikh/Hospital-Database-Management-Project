@@ -38,21 +38,21 @@ Data transferring is very essential for a hospital management system as sometime
 ### ER Schema
  
 Entities, Attributes and Primary Keys
- Patient(patID,patEmail,patPassword,patName,-patFirstName,-patLastName,patAddress, patSex,patDOB)
+ Patient(<ins>patID</ins>,patEmail,patPassword,patName,-patFirstName,-patLastName,patAddress, patSex,patDOB)
  
-Doctor(docID,docEmail,docPassword,docName,-docFirstName,-docLastName)
+Doctor(<ins>docID</ins>,docEmail,docPassword,docName,-docFirstName,-docLastName)
  
-MedicalHistory(hstID,hstAppointmentDate,hstDisease,hstSurgeries,hstPreviousMedication)
+MedicalHistory(<ins>hstID</ins>,hstAppointmentDate,hstDisease,hstSurgeries,hstPreviousMedication)
  
-Nurse(nurID ,nurName,-nurFirstName,-nurLastName)
+Nurse(<ins>nurID</ins> ,nurName,-nurFirstName,-nurLastName)
 
-Department (depID, depName, depNumber, depEmail)
+Department (<ins>depID</ins>, depName, depNumber, depEmail)
  
-Room(roomID,roomType)
+Room(<ins>roomID</ins>,roomType)
  
-Medicine(medID,medName,medCost)
+Medicine(<ins>medID</ins>,medName,medCost)
 
-Bill(bilID,bilDoctorCharge,bilRoomCharge,bilNumberofdays)
+Bill(<ins>bilID</ins>,bilDoctorCharge,bilRoomCharge,bilNumberofdays)
  
 
 Relationships, Attributes, Degrees, Participating Entities and Constraints
