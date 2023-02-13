@@ -39,21 +39,21 @@ Data transferring is very essential for a hospital management system as sometime
  
 #### Entities, Attributes and Primary Keys
 
-Patient(<ins>patID</ins>,patEmail,patPassword,patName,-patFirstName,-patLastName,patAddress, patSex,patDOB)
+Patient(**<ins>patID</ins>**,patEmail,patPassword,patName,-patFirstName,-patLastName,patAddress, patSex,patDOB)
  
-Doctor(<ins>docID</ins>,docEmail,docPassword,docName,-docFirstName,-docLastName)
+Doctor(**<ins>docID</ins>**,docEmail,docPassword,docName,-docFirstName,-docLastName)
  
-MedicalHistory(<ins>hstID</ins>,hstAppointmentDate,hstDisease,hstSurgeries,hstPreviousMedication)
+MedicalHistory(**<ins>hstID</ins>**,hstAppointmentDate,hstDisease,hstSurgeries,hstPreviousMedication)
  
-Nurse(<ins>nurID</ins> ,nurName,-nurFirstName,-nurLastName)
+Nurse(**<ins>nurID</ins>** ,nurName,-nurFirstName,-nurLastName)
 
-Department (<ins>depID</ins>, depName, depNumber, depEmail)
+Department (**<ins>depID</ins>**, depName, depNumber, depEmail)
  
-Room(<ins>roomID</ins>,roomType)
+Room(**<ins>roomID</ins>**,roomType)
  
-Medicine(<ins>medID</ins>,medName,medCost)
+Medicine(**<ins>medID</ins>**,medName,medCost)
 
-Bill(<ins>bilID</ins>,bilDoctorCharge,bilRoomCharge,bilNumberofdays)
+Bill(**<ins>bilID</ins>**,bilDoctorCharge,bilRoomCharge,bilNumberofdays)
  
 #### Relationships, Attributes, Degrees, Participating Entities and Constraints
 
@@ -94,36 +94,36 @@ Prescribe: ternary relationship
 
 ### Relational schema
 
-Patient(<ins>patID</ins>,patEmail,patPassword,patFirstName,patLastName,patAddress, patSex,patDOB)
+Patient(**<ins>patID</ins>**,patEmail,patPassword,patFirstName,patLastName,patAddress, patSex,patDOB)
  
-Doctor(<ins>docID</ins>,docEmail,docPassword, docFirstName, docLastName, depID)
+Doctor(**<ins>docID</ins>**,docEmail,docPassword, docFirstName, docLastName, depID)
  
-MedicalHistory(<ins>hstID</ins>,hstAppointmentDate,hstDisease,hstSurgeries,
+MedicalHistory(**<ins>hstID</ins>**,hstAppointmentDate,hstDisease,hstSurgeries,
 hstPreviousMedication,patID)
  
-Nurse(<ins>nurID</ins>, nurFirstName, nurLastName, depID, patID, docID)
+Nurse(**<ins>nurID</ins>**, nurFirstName, nurLastName, depID, patID, docID)
  
-Department (<ins>depID</ins>, depName, depNumber, depEmail)
+Department (**<ins>depID</ins>**, depName, depNumber, depEmail)
  
-Room (<ins>romID</ins>, romType, patID)
+Room (**<ins>romID</ins>**, romType, patID)
  
-Medicine(<ins>medID</ins>, medName, medCost, docID)
+Medicine(**<ins>medID</ins>**, medName, medCost, docID)
  
-Bill(<ins>bilID</ins>,bilDoctorCharge, bilRoomCharge, bilNumberOfDays)
+Bill(**<ins>bilID</ins>**,bilDoctorCharge, bilRoomCharge, bilNumberOfDays)
  
-Store (<ins>patID</ins>, <ins>hstID</ins>)
+Store (**<ins>patID</ins>**, **<ins>hstID</ins>**)
  
-Prescribe (<ins>docID</ins>, <ins>patID</ins>, <ins>medID</ins>)
+Prescribe (**<ins>docID</ins>**, **<ins>patID</ins>**, **<ins>medID</ins>**)
  
-Allot (<ins>romID</ins>, <ins>patID</ins>)
+Allot (**<ins>romID</ins>**, **<ins>patID</ins>**)
  
-Pay (<ins>patID</ins>, <ins>bilID</ins>, paymentDate)
+Pay (**<ins>patID</ins>**, **<ins>bilID</ins>**, paymentDate)
 
-Assign (<ins>nurID</ins>, <ins>patID</ins>)
+Assign (**<ins>nurID</ins>**, **<ins>patID</ins>**)
  
-Assist (<ins>nurID</ins>, <ins>docID</ins>)
+Assist (**<ins>nurID</ins>**, **<ins>docID</ins>**)
  
-Work (<ins>depID</ins>, <ins>docID</ins>)
+Work (**<ins>depID</ins>**, **<ins>docID</ins>**)
 
 
 ### Business rules and determine referential integrity actions.
