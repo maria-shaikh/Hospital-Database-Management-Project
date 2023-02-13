@@ -1,8 +1,7 @@
 # Hospital-Database-Management-Project
 The project's goal is to computerize the hospital's front office management in order to create software that is user friendly, simple, fast, and cost effective.
 
-###insertlogo
-
+<img width="395" alt="Screenshot 2023-02-12 at 11 34 25 PM" src="https://user-images.githubusercontent.com/102799924/218373430-b3b5ec6b-6a12-4e91-a659-f6d57622ab55.png">
 
 Healthcare is widely accepted to be the most fundamental human right. With the advancement of technology, there are several ways in which we can automate the data storing process for various stakeholders by developing a systematic database management system which will help in improving efficiency and reducing costs. 
 
