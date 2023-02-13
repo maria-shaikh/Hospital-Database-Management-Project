@@ -35,7 +35,7 @@ Data privacy is a very essential aspect of a hospital database. The data stored 
 4. Data Transferring  
 Data transferring is very essential for a hospital management system as sometimes patients get transferred from one hospital to another for better referencing and better treatment. By developing a hospital management system, we have made data transferring easy as one patient’s medical records can directly be downloaded and transferred.
 
-ER Schema
+### ER Schema
  
 Entities, Attributes and Primary Keys
  Patient(patID,patEmail,patPassword,patName,-patFirstName,-patLastName,patAddress, patSex,patDOB)
