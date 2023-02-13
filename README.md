@@ -90,6 +90,7 @@ Prescribe: ternary relationship
 
 ER Diagram:
 
+![Project_0506_01 (7)](https://user-images.githubusercontent.com/102799924/218373791-dbec5fa9-672d-4ae6-8d6b-cb1448606cc0.png)
 
 Relational schema
 Patient(patID,patEmail,patPassword,patFirstName,patLastName,patAddress, patSex,patDOB)
