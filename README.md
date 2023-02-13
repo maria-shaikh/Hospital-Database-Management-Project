@@ -109,7 +109,7 @@ Room (**<ins>romID</ins>**, romType, *patID*)
  
 Medicine(**<ins>medID</ins>**, medName, medCost, *docID*)
  
-Bill(**<ins>bilID</ins>**,bilDoctorCharge, bilRoomCharge, bilNumberOfDays)
+Bill(**<ins>bilID</ins>**,bilDoctorCharge, bilRoomCharge, bilNumberOfDays, *patID, medID, docID, romID*)
  
 Store (***<ins>patID</ins>***, ***<ins>hstID</ins>***)
  
