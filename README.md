@@ -126,32 +126,59 @@ Work (depID, docID)
 
 
 Business rules and determine referential integrity actions.
+
 [R1] When a department is deleted from the database, the corresponding doctor’s information should also be deleted from the database.
+
 [R2] When the information on a department is changed in the database, the corresponding doctor’s information should be changed in the database accordingly.
+
 [R3] When a patient is deleted from the database, the corresponding medical history of the patient should also be deleted from the database.
+
 [R4] When the information on a patient is updated in the database, the corresponding medical history of the patient should also be updated accordingly.
+
 [R5] When a nurse is working in a specific department, the information of the department cannot be deleted or changed in the database.
+
 [R6] When a nurse is tending to a certain patient, the information of the patient cannot be deleted or changed in the database.
+
 [R7] When a nurse is working for a doctor, the doctor’s information cannot be deleted from the database.
+
 [R8] When a nurse is working for a doctor, if the information of the doctor is changed in the database, the nurse’s information should be changed accordingly.
+
 [R9] When a room is occupied by a patient, the patient’s information cannot be deleted from the database.
+
 [R10] When a room is occupied by a patient, if the information of the patient is changed in the database, the room information should be changed accordingly.
+
 [R11] When a doctor has prescribed a certain medicine, the doctor’s information cannot be deleted from the database.
+
 [R12] When a doctor has prescribed a certain medicine, if the doctor’s information is changed in the database, the medicine information should be changed accordingly.
+
 [R13] When a patient’s medical history is stored in the database, if the information of the patient is deleted or updated, the medical history of that patient should also be deleted or updated accordingly.
+
 [R14] When a patient’s medical history is stored in the database, the medical history cannot be deleted or changed.
+
 [R15] When a doctor has prescribed a medicine to a patient, if the doctor’s information is deleted or changed, the patient and the medicine information should also be deleted or changed accordingly.
+
 [R16] When a doctor has prescribed a medicine to a patient, if the patient’s information is deleted or changed, the doctor and the medicine information should also be deleted or changed accordingly.
+
 [R17] When a doctor has prescribed a medicine to a patient, the medicine information cannot be deleted or changed in the database.
+
 [R18] When a room is allotted to a patient, the patient information cannot be deleted or updated in the database.
+
 [R19] When a room is allotted to a patient, if the information on the room is deleted or changed in the database, the patient information should be deleted or updated accordingly.
+
 [R20] When a patient has paid a bill, if the patient information is deleted or changed in the database, the bill information should be deleted or changed accordingly.
+
 [R21] When a patient has paid a bill, the bill information cannot be deleted or updated in the database.
+
 [R22] When a nurse has been assigned to a patient, if the nurse’s information is deleted or changed in the database, the patient’s information should also be deleted or changed in the database accordingly.
+
 [R23] When a nurse has been assigned to a patient, if the patient’s information is deleted or changed in the database, the nurse’s information should also be deleted or changed in the database accordingly.
+
 [R24] When a nurse is assisting a doctor, if the nurse’s  information is deleted or changed in the database, the doctor’s information should also be deleted or changed in the database accordingly.
+
 [R25] When a nurse is assisting a doctor, the doctor’s information cannot be deleted or changed in the database.
+
 [R26] When a doctor is working for a department, if the information on the department is deleted or changed in the database, the doctor’s information should be deleted or changed accordingly.
+
 [R27] When a doctor is working for a department, the information on the doctor cannot be deleted or changed in the database.
 
 
