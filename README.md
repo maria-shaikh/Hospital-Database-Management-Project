@@ -96,34 +96,34 @@ Prescribe: ternary relationship
 
 Patient(**<ins>patID</ins>**,patEmail,patPassword,patFirstName,patLastName,patAddress, patSex,patDOB)
  
-Doctor(**<ins>docID</ins>**,docEmail,docPassword, docFirstName, docLastName, depID)
+Doctor(**<ins>docID</ins>**,docEmail,docPassword, docFirstName, docLastName, *depID*)
  
 MedicalHistory(**<ins>hstID</ins>**,hstAppointmentDate,hstDisease,hstSurgeries,
-hstPreviousMedication,patID)
+hstPreviousMedication,*patID*)
  
-Nurse(**<ins>nurID</ins>**, nurFirstName, nurLastName, depID, patID, docID)
+Nurse(**<ins>nurID</ins>**, nurFirstName, nurLastName, *depID, patID, docID*)
  
 Department (**<ins>depID</ins>**, depName, depNumber, depEmail)
  
-Room (**<ins>romID</ins>**, romType, patID)
+Room (**<ins>romID</ins>**, romType, *patID*)
  
-Medicine(**<ins>medID</ins>**, medName, medCost, docID)
+Medicine(**<ins>medID</ins>**, medName, medCost, *docID*)
  
 Bill(**<ins>bilID</ins>**,bilDoctorCharge, bilRoomCharge, bilNumberOfDays)
  
-Store (**<ins>patID</ins>**, **<ins>hstID</ins>**)
+Store (***<ins>patID</ins>***, ***<ins>hstID</ins>***)
  
-Prescribe (**<ins>docID</ins>**, **<ins>patID</ins>**, **<ins>medID</ins>**)
+Prescribe (***<ins>docID</ins>***, ***<ins>patID</ins>***, ***<ins>medID</ins>***)
  
-Allot (**<ins>romID</ins>**, **<ins>patID</ins>**)
+Allot (***<ins>romID</ins>***, ***<ins>patID</ins>***)
  
-Pay (**<ins>patID</ins>**, **<ins>bilID</ins>**, paymentDate)
+Pay (***<ins>patID</ins>***, ***<ins>bilID</ins>***, paymentDate)
 
-Assign (**<ins>nurID</ins>**, **<ins>patID</ins>**)
+Assign (***<ins>nurID</ins>***, ***<ins>patID</ins>***)
  
-Assist (**<ins>nurID</ins>**, **<ins>docID</ins>**)
+Assist (***<ins>nurID</ins>***, ***<ins>docID</ins>***)
  
-Work (**<ins>depID</ins>**, **<ins>docID</ins>**)
+Work (***<ins>depID</ins>***, ***<ins>docID</ins>***)
 
 
 ### Business rules and determine referential integrity actions.
