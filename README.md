@@ -7,7 +7,7 @@ Healthcare is widely accepted to be the most fundamental human right. With the a
 
 MoMo Hospital is a multi-specialty hospital with specialized Intensive Care Unit (ICU) & 24-hrs emergency & laboratory service. With a team of world-class doctors and other healthcare professionals, we aim to provide unparalleled healthcare to our patients. From diagnosis to discharge, a patient goes through several intermediary steps as part of treatment, including, but not limited to, laboratory tests, medication, billing, etc. Hospital employees who contribute to the smooth functioning of the hospital are allocated to different departments. 
 
-<ins>The project's goal</ins> is to computerize the hospital's front office management in order to create software that is user friendly, simple, fast, and cost effective. It is concerned with the gathering of patient information, diagnosis details, and so on. It was traditionally done by hand. The system's primary function is to register and store patient and doctor information, as well as to retrieve and manipulate this information as needed. System input contains patient and diagnosis information, while system output displays these details on the screen. A username and password are required to access the Hospital Management System. It can be accessed by an administrator or a receptionist. Only they have access to the database.
+The project's goal is to computerize the hospital's front office management in order to create software that is user friendly, simple, fast, and cost effective. It is concerned with the gathering of patient information, diagnosis details, and so on. It was traditionally done by hand. The system's primary function is to register and store patient and doctor information, as well as to retrieve and manipulate this information as needed. System input contains patient and diagnosis information, while system output displays these details on the screen. A username and password are required to access the Hospital Management System. It can be accessed by an administrator or a receptionist. Only they have access to the database.
 Stakeholders for the Hospital system 
 
 At MoMo hospital, we strive to provide the highest level of care not just for our patients, but for all stakeholders within the organization. We have a number of stakeholders that impact the processes and outcomes of the hospital and for the scope of this project, we are recognizing the
@@ -94,36 +94,36 @@ Prescribe: ternary relationship
 
 ### Relational schema
 
-Patient(patID,patEmail,patPassword,patFirstName,patLastName,patAddress, patSex,patDOB)
+Patient(<ins>patID</ins>,patEmail,patPassword,patFirstName,patLastName,patAddress, patSex,patDOB)
  
-Doctor(docID,docEmail,docPassword, docFirstName, docLastName, depID)
+Doctor(<ins>docID</ins>,docEmail,docPassword, docFirstName, docLastName, depID)
  
-MedicalHistory(hstID,hstAppointmentDate,hstDisease,hstSurgeries,
+MedicalHistory(<ins>hstID</ins>,hstAppointmentDate,hstDisease,hstSurgeries,
 hstPreviousMedication,patID)
  
-Nurse(nurID , nurFirstName, nurLastName, depID, patID, docID)
+Nurse(<ins>nurID</ins>, nurFirstName, nurLastName, depID, patID, docID)
  
-Department (depID, depName, depNumber, depEmail)
+Department (<ins>depID</ins>, depName, depNumber, depEmail)
  
-Room (romID, romType, patID)
+Room (<ins>romID</ins>, romType, patID)
  
-Medicine(medID, medName, medCost, docID)
+Medicine(<ins>medID</ins>, medName, medCost, docID)
  
-Bill(bilID,bilDoctorCharge, bilRoomCharge, bilNumberOfDays)
+Bill(<ins>bilID</ins>,bilDoctorCharge, bilRoomCharge, bilNumberOfDays)
  
-Store (patID, hstID)
+Store (<ins>patID</ins>, <ins>hstID</ins>)
  
-Prescribe (docID, patID, medID)
+Prescribe (<ins>docID</ins>, <ins>patID</ins>, <ins>medID</ins>)
  
-Allot (romID, patID)
+Allot (<ins>romID</ins>, <ins>patID</ins>)
  
-Pay (patID, bilID, paymentDate)
+Pay (<ins>patID</ins>, <ins>bilID</ins>, paymentDate)
 
-Assign (nurID, patID)
+Assign (<ins>nurID</ins>, <ins>patID</ins>)
  
-Assist (nurID, docID)
+Assist (<ins>nurID</ins>, <ins>docID</ins>)
  
-Work (depID, docID)
+Work (<ins>depID</ins>, <ins>docID</ins>)
 
 
 ### Business rules and determine referential integrity actions.
